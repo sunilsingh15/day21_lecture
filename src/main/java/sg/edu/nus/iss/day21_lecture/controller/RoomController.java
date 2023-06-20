@@ -44,7 +44,7 @@ public class RoomController {
 
     // http://localhost:8080/api/rooms/{room-id}
     // http://localhost:8080/api/rooms/1
-    @GetMapping("/{room-id}")
+    @GetMapping(path = "/{roomId}")
     public ResponseEntity<Room> getRoomById(@PathVariable int roomId) {
         Room room = roomService.findById(roomId);
 
